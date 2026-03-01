@@ -1,6 +1,6 @@
-TSAPS v4.3 — JavaScript Reference Implementation
+TSAPS v1.0 — JavaScript Reference Implementation
 
-This folder contains a minimal JavaScript reference implementation of TSAPS v4.3.
+This folder contains a minimal JavaScript reference implementation of TSAPS v1.0.
 
 ⚠️ This is a reference implementation only.
 It is designed for learning, testing, and validating protocol logic — not production deployment.
@@ -19,7 +19,7 @@ tweetnacl → Ed25519 signing & verification
 
 Node.js crypto module → SHA256, HMAC, HKDF
 
-These primitives reflect the TSAPS v4.3 cryptographic design.
+These primitives reflect the TSAPS v1.0 cryptographic design.
 
 1️⃣ Install Dependencies
 
@@ -109,4 +109,4 @@ See the main repository:
 /formal-model
 /test-vectors
 
-For the full TSAPS v4.3 protocol specification and security model.
+For the full TSAPS v1.0 protocol specification and security model.
