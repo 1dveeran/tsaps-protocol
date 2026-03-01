@@ -1,0 +1,58 @@
+Business Source License 1.0
+
+Parameters
+
+Licensor:           Techken Technologies
+
+Licensed Work:
+
+    TSAPS (Temporal-Atomic Secure API Protocol),
+    including version 1.0 and all future versions,
+    specifications, cryptographic models,
+    reference implementations, SDKs,
+    documentation, and related materials
+    contained within this repository.
+
+Additional Use Grant:
+
+    You may make production use of the Licensed Work only if:
+
+    (a) Your annual gross revenue is less than $1,000,000 USD; or
+
+    (b) Your use is for non-commercial, educational, academic,
+        or personal research purposes.
+
+    Use by any entity exceeding $1,000,000 USD in annual revenue,
+    or use for the purpose of offering a managed authentication,
+    transaction signing, or API security service that competes
+    with the Licensor, requires a Commercial License.
+
+Change Date:        [March 1, 2026 — e.g., January 1, 2030]
+
+Change License:     Apache License, Version 2.0
+
+----------------------------------------------------------------------
+
+Terms
+
+The Licensor hereby grants you the right to copy, modify,
+create derivative works, redistribute, and make non-production
+use of the Licensed Work.
+
+Production use is permitted only under the conditions
+described in the Additional Use Grant above.
+
+Effective on the Change Date, the Licensor hereby grants you
+rights under the terms of the Change License, and the rights
+granted in the paragraph above terminate.
+
+If your use of the Licensed Work does not comply with the
+requirements currently in effect as described in this License,
+you must purchase a Commercial License from the Licensor.
+
+All copies of the original and modified Licensed Work are
+subject to this License. This License applies separately
+for each version of the Licensed Work.
+
+THE LICENSED WORK IS PROVIDED “AS IS”, WITHOUT WARRANTY OF
+ANY KIND.

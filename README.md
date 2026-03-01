@@ -1,4 +1,4 @@
-# TSAPS v4.3
+# TSAPS v1.0
 ## Temporal-Atomic Secure API Protocol
 Deterministic, Hardware-Bound Transaction Proof for High-Value APIs
 
@@ -42,7 +42,7 @@ No cross-session duplication.
 
 ---
 
-# 🧠 How TSAPS v4.3 Works (In Simple Terms)
+# 🧠 How TSAPS v1.0 Works (In Simple Terms)
 
 Instead of sending a reusable access token, the client:
 
@@ -138,7 +138,7 @@ Only then does the transaction proceed.
 
 # 📊 Comparison with Common Approaches
 
-| Feature                         | JWT (Bearer) | DPoP     | mTLS Only         | TSAPS v4.3 |
+| Feature                         | JWT (Bearer) | DPoP     | mTLS Only         | TSAPS v1.0 |
 | ------------------------------- | ------------ | -------- | ----------------- | ---------- |
 | Reusable token                  | Yes          | Yes      | No token          | No         |
 | Replay resistance               | Weak         | Partial  | TLS-bound         | Strong     |
@@ -190,7 +190,7 @@ Server
 
 # 🔒 Security Guarantees
 
-TSAPS v4.3 ensures:
+TSAPS v1.0 ensures:
 
 * A signed request cannot be modified.
 * A request cannot be replayed in another session.
@@ -237,7 +237,7 @@ It is likely unnecessary for:
 
 # 🧩 Design Principles
 
-TSAPS v4.3 follows:
+TSAPS v1.0 follows:
 
 * Deterministic verification
 * No reusable bearer secrets
@@ -251,7 +251,7 @@ TSAPS v4.3 follows:
 
 # 🏁 Summary
 
-TSAPS v4.3 turns every API request into a:
+TSAPS v1.0 turns every API request into a:
 
 * Hardware-signed
 * TLS-bound
@@ -260,3 +260,82 @@ TSAPS v4.3 turns every API request into a:
 * DDoS-hardened
 
 cryptographic transaction proof.
+
+# Repository Structure
+tsaps/
+│
+├── README.md
+├── LICENSE
+├── CONTRIBUTING.md
+├── COMMERCIAL-LICENSE.md
+├── SECURITY.md
+├── CODE_OF_CONDUCT.md
+│
+├── spec/
+│   ├── tsaps-v1.0-rfc.md
+│   ├── security-model.md
+│   └── tamarin/
+│       └── tsaps-v1.0.spthy
+│
+├── test-vectors/
+│   ├── v1.0/
+│   │   ├── basic-transfer.json
+│   │   ├── duplicate-transfer.json
+│   │   ├── invalid-guard.json
+│   │   └── cross-window.json
+│   └── README.md
+│
+├── reference-implementations/
+│   │
+│   ├── javascript/
+│   │   ├── package.json
+│   │   ├── src/
+│   │   │   ├── tsaps.js
+│   │   │   ├── client.js
+│   │   │   └── server.js
+│   │   └── README.md
+│   │
+│   ├── typescript/
+│   │   ├── package.json
+│   │   ├── tsconfig.json
+│   │   ├── src/
+│   │   │   ├── tsaps.ts
+│   │   │   ├── client.ts
+│   │   │   └── server.ts
+│   │   └── README.md
+│   │
+│   ├── go/
+│   │   ├── go.mod
+│   │   ├── tsaps/
+│   │   │   ├── core.go
+│   │   │   ├── client.go
+│   │   │   └── server.go
+│   │   └── README.md
+│   │
+│   ├── rust/
+│   │   ├── Cargo.toml
+│   │   ├── src/
+│   │   │   ├── lib.rs
+│   │   │   ├── client.rs
+│   │   │   └── server.rs
+│   │   └── README.md
+│   │
+│   ├── dotnet/
+│   │   ├── Tsaps.sln
+│   │   ├── Tsaps.Core/
+│   │   ├── Tsaps.Client/
+│   │   ├── Tsaps.Server/
+│   │   └── README.md
+│   │
+│   └── python/
+│       ├── pyproject.toml
+│       ├── tsaps/
+│       │   ├── core.py
+│       │   ├── client.py
+│       │   └── server.py
+│       └── README.md
+│
+└── docs/
+    ├── architecture.md
+    ├── comparison.md
+    └── diagrams/
